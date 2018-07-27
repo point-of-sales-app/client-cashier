@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Bayar Pesanan"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:text="No. Meja"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:text="Total"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:text="Bayar Tunai"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/inputTableNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:enabled="false"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="5"/>
+            <EditText
+                android:id="@+id/inputTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:enabled="false"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="21000"/>
+            <EditText
+                android:id="@+id/inputCash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:hint="Masukkan jumlah uang"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:text="Bayar" />
+
+</LinearLayout>

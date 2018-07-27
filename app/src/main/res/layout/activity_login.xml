@@ -44,7 +44,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Email"
-                        android:inputType="textEmailAddress" />
+                        android:inputType="textEmailAddress"
+                        android:text="cashier@denbedjo.com"/>
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
@@ -58,7 +59,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Password"
-                        android:inputType="textPassword" />
+                        android:inputType="textPassword"
+                        android:text="123"/>
                 </android.support.design.widget.TextInputLayout>
 
                 <Button

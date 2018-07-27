@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
                 LoginResponse loginResponse = response.body();
                 new Memcache(getApplicationContext()).setUser(loginResponse.getUser());
                 new Memcache(getApplicationContext()).setRestaurant(loginResponse.getRestaurant());
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                Intent intent = new Intent(LoginActivity.this, LoadDataActivity.class);
                 startActivity(intent);
             }
 
