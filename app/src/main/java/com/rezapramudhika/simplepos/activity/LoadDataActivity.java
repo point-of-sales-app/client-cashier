@@ -42,7 +42,7 @@ public class LoadDataActivity extends AppCompatActivity {
             public void run() {
                 getCategories();
             }
-        }, 3000);
+        }, 0);
     }
 
     private void getCategories() {

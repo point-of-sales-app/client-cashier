@@ -1,6 +1,7 @@
 package com.rezapramudhika.simplepos.rest;
 
 import com.rezapramudhika.simplepos.model.CategoryResponse;
+import com.rezapramudhika.simplepos.model.GetLastIdResponse;
 import com.rezapramudhika.simplepos.model.LoginBody;
 import com.rezapramudhika.simplepos.model.LoginResponse;
 import com.rezapramudhika.simplepos.model.MenuResponse;
@@ -41,5 +42,10 @@ public interface ApiInterface {
             @Header("token") String token,
             @Query("restaurantid") String restaurantId,
             @Body TransactionBody transactionBody
+    );
+
+    @GET("/transaction/lastId")
+    Call<GetLastIdResponse> getLastId(
+            @Header("token") String token
     );
 }

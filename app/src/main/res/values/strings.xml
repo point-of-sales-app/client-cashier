@@ -2,4 +2,5 @@
     <string name="app_name">SimplePos</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_customer_list">CustomerListActivity</string>
+    <string name="print_line">"--------------------------------"  </string>
 </resources>

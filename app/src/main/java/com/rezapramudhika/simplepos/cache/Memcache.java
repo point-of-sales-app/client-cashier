@@ -44,10 +44,15 @@ public class Memcache {
         editor.commit();
     }
 
-    public User getRestaurant() {
+    public Restaurant getRestaurant() {
         Gson gson = new Gson();
         String json = pref.getString(RESTAURANT_KEY, "");
-        return gson.fromJson(json, User.class);
+        return gson.fromJson(json, Restaurant.class);
+    }
+
+    public void logout() {
+        editor.clear();
+        editor.commit();
     }
 
 
