@@ -69,6 +69,7 @@ public class LoginActivity extends AppCompatActivity {
                 new Memcache(getApplicationContext()).setRestaurant(loginResponse.getRestaurant());
                 Intent intent = new Intent(LoginActivity.this, LoadDataActivity.class);
                 startActivity(intent);
+                finish();
             }
 
             @Override
